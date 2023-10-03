@@ -1,0 +1,42 @@
+footer {
+    background-color: $color;
+
+    .footer-block {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 25px;
+        width: 100%;
+        justify-content: right;
+
+        .footer-block-link {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 25px;
+
+            .footer-lien {
+                color: $color2;
+                text-decoration: none;
+                font-family: $font1;
+
+                &:hover {
+                    color: $color4;
+                }
+            }
+
+            .fa-solid.fa-handshake-angle,
+            .fa-solid.fa-utensils {
+                color: $color2;
+                margin-right: 10px;
+            }    
+        }
+
+        .footer-logo {
+            text-decoration: none;
+            color: $color3;
+            font-family: $font2;
+            font-size: 1.125rem;
+            padding: 25px 50px 25px 120px;
+        }
+    }
+}
