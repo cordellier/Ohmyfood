@@ -90,7 +90,7 @@ main .location-city {
           align-items: center;
   color: #353535;
   height: 50px;
-  background-color: #EAEAEA;
+  background-color: #FFF;
 }
 main .location-city .fa-solid.fa-location-dot {
   margin-right: 10px;
@@ -206,7 +206,7 @@ main .operation-container .operation-steps .operation-step .operation-detail:hov
   color: #9356DC;
 }
 main .restaurants {
-  background: #EAEAEA;
+  background: #FFF;
 }
 main .restaurants .restaurant-cards {
   display: grid;
@@ -277,7 +277,7 @@ footer .footer-block .footer-block-link {
   margin: 25px;
 }
 footer .footer-block .footer-block-link .footer-lien {
-  color: #EAEAEA;
+  color: #FFF;
   text-decoration: none;
 }
 footer .footer-block .footer-block-link .footer-lien:hover {
@@ -285,7 +285,7 @@ footer .footer-block .footer-block-link .footer-lien:hover {
 }
 footer .footer-block .footer-block-link .fa-solid.fa-handshake-angle,
 footer .footer-block .footer-block-link .fa-solid.fa-utensils {
-  color: #EAEAEA;
+  color: #FFF;
   margin-right: 10px;
 }
 footer .footer-block .footer-logo {

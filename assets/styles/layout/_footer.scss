@@ -1,5 +1,5 @@
 footer {
-    background-color: $color;
+    background-color: $background_footer;
 
     .footer-block {
         display: flex;
@@ -15,25 +15,25 @@ footer {
             margin: 25px;
 
             .footer-lien {
-                color: $color2;
+                color: $lien_footer;
                 text-decoration: none;
 
                 &:hover {
-                    color: $color4;
+                    color: $purple;
                 }
             }
 
             .fa-solid.fa-handshake-angle,
             .fa-solid.fa-utensils {
-                color: $color2;
+                color: $lien_footer;
                 margin-right: 10px;
             }    
         }
 
         .footer-logo {
             text-decoration: none;
-            color: $color3;
-            font-family: $font2;
+            color: $white;
+            font-family: $logo_font;
             font-size: 1.125rem;
             padding: 25px 50px 25px 120px;
         }
