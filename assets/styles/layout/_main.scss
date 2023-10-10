@@ -41,6 +41,13 @@ main {
     // **SECTION OPERATION**
     .operation {
         padding: 50px 180px 50px 180px;
+        // **media queries**
+        @media (max-width: 1420px) {
+            padding: 25px 90px 25px 90px;
+        }
+        @media (max-width: 800px) {
+            padding: 25px 25px 25px 25px;
+        }
 
         .operation-container {
             display: flex;
@@ -72,7 +79,7 @@ main {
                         flex-direction: row;
                         border-radius: 15px;
                         background: $background_grey;
-                        width: 330px;
+                        width: 345px;
                         height: 65px;
                         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
                         align-items: center;
@@ -106,6 +113,13 @@ main {
     .restaurants {
         background: $lien_footer;
         padding: 30px 180px 30px 180px;
+        // **media queries**
+        @media (max-width: 1420px) {
+            padding: 12.5px 90px 12.5px 90px;
+        }
+        @media (max-width: 800px) {
+            padding: 25px 25px 25px 25px;
+        }
 
 
         .restaurant-cards {
@@ -113,9 +127,20 @@ main {
             grid-template-columns: repeat(2, 1fr);
             margin-top: 28px;
             gap: 50px 100px;
+            // **media queries**
+            @media (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
 
             .restaurant-tag {
-                align-items: center;
+                align-items: center;   
+                border-radius: 1rem;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                position: relative;          
 
                 .restaurant-tag-img img {
                     border-radius: 20px 20px 0 0;
@@ -129,13 +154,14 @@ main {
                     border-radius: 20px 20px 0 0;
                 }
 
-                .restaurant-tag-img-new {
+                .new {
                     color: $green;
+                    font-weight: bold;
                     background-color: $green_light;
                     position: absolute;
-                    right: 1rem;
-                    top: 1rem;
-                    padding: .3rem .8rem;
+                    padding: 10px 20px;
+                    margin-left: -140px;
+                    margin-top: 22px;
                 }
             }
 
@@ -147,7 +173,6 @@ main {
                 background: #FFF;
                 padding: 5px;
                 box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
-                flex-grow: 1;
 
                 .restaurant-block-infos {
                     margin: 5px 10px;
@@ -166,3 +191,4 @@ main {
         }
     }
 }
+
