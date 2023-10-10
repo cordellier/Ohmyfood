@@ -470,7 +470,6 @@ header .back {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: auto;
 }
 
@@ -508,21 +507,20 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -100px;
+  margin-bottom: 10px;
 }
-.main_meal_desserts .choice {
-  margin-top: 40px;
-  row-gap: 1rem;
-}
-.main_meal_desserts .choice .title {
+.main_meal_desserts .title {
   font-family: roboto, sans-serif;
   margin-bottom: 5px;
+  margin-top: 40px;
 }
-.main_meal_desserts .choice .outline {
+.main_meal_desserts .outline {
   border-top: 3px solid #99E2D0;
   width: 40px;
   margin-bottom: 10px;
 }
-.main_meal_desserts .choice .articles {
+.main_meal_desserts .articles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,8 +530,8 @@ img {
           flex-direction: column;
   row-gap: 1rem;
 }
-.main_meal_desserts .choice .articles h3,
-.main_meal_desserts .choice .articles .article__price {
+.main_meal_desserts .articles h3,
+.main_meal_desserts .articles .article__price {
   font-weight: 600;
 }
 
@@ -658,8 +656,8 @@ img {
   border-radius: 100px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  -webkit-animation: apparition_check 0.5s;
-          animation: apparition_check 0.5s;
+  -webkit-animation: apparition_check 0.25s;
+          animation: apparition_check 0.25s;
 }
 .article__icon_check {
   height: 1.6rem;
@@ -680,8 +678,8 @@ img {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   visibility: hidden;
-  -webkit-animation: disparition_check 0.5s;
-          animation: disparition_check 0.5s;
+  -webkit-animation: disparition_check 0.25s;
+          animation: disparition_check 0.25s;
 }
 .article__icon {
   color: white;
@@ -691,7 +689,6 @@ img {
 .explore_button {
   margin: 0 auto;
   width: 18%;
-  margin-bottom: 30px;
 }
 
 @media (max-width: 1023px) {

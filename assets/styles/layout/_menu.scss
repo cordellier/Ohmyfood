@@ -19,7 +19,6 @@ header {
 }
 
 .wrapper {
-    max-width: 1440px;
     margin: auto;
 }
 
@@ -29,178 +28,172 @@ img {
 }
 
 .title_like {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        .title_restaurant {
-            font-family: $logo_font;
-            letter-spacing: 0.1rem;
-            margin-right: 20px;
-            
-        }
-        
-        .like {
-            margin-top: -15px;
-        }
-        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title_restaurant {
+        font-family: $logo_font;
+        letter-spacing: 0.1rem;
+        margin-right: 20px;
     }
 
-    .main_meal_desserts {
-        display: flex;
-        flex-direction: column;
-        
-            .choice {
-                margin-top: 40px;
-                row-gap: 1rem;
-                
-                .title {
-                    font-family: $primay_font;
-                    margin-bottom: 5px;
-                }
-                
-                .outline {
-                    border-top: 3px solid $green_light;
-                    width: 40px;
-                    margin-bottom: 10px;
-                }
-                
-                .articles {
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 1rem;
-                
-                    h3,
-                    .article__price {
-                        font-weight: 600;
-                    }
-                }
+    .like {
+        margin-top: -15px;
+    }
+
+}
+
+.main_meal_desserts {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-bottom: 10px;
+
+        .title {
+            font-family: $primay_font;
+            margin-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .outline {
+            border-top: 3px solid $green_light;
+            width: 40px;
+            margin-bottom: 10px;
+        }
+
+        .articles {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            h3,
+            .article__price {
+                font-weight: 600;
             }
+        }
     }
 
-    .article {
-        background-color: $white;
-        border-radius: 1rem;
+.article {
+    background-color: $white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.25rem;
+    cursor: pointer;
+    height: 4rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &__description_price {
         display: flex;
-        flex-direction: row;
-        padding: 0.25rem;
-        cursor: pointer;
-        height: 4rem;
-        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 5px 5px;
+    }
+
+    &__name {
+        margin: 5px 0 5px 5px;
+        overflow: hidden; // cache le texte dépassant de la largeur
+        white-space: nowrap; // empêche le texte de passé à la ligne
+        text-overflow: ellipsis; // Ajoute des points de suspension
         position: relative;
+    }
+
+    &__description {
+        margin: 0;
         overflow: hidden;
-    
-        &__description_price {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 0 5px 5px;
-        }
-    
-        &__name {
-            margin: 5px 0 5px 5px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            position: relative;
-        }
-    
-        &__description {
-            margin: 0;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            padding-right: 1rem;
-            position: relative;
-        }
-    
-        &__price {
-            margin: 0 1rem 0 0;
-            transition-duration: .5s;
-        }
-    
-        &__name_description_price {
-            flex: 1;
-            width: 65%;
-        }
-    
-        &__check {
-            width: 0;
-            display: flex;
-            background-color: $green_light;
-            align-items: center;
-            justify-content: center;
-            transition-duration: .5s;
-            height: 4.5rem;
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            border-radius: 0rem 1rem 1rem 0rem;
-        }
-    
-        &:hover &__name {
-            width: inherit;
-            transition: all .5s ease-in-out;
-            transition-duration: .5s;
-        }
-    
-        &:hover &__price {
-            padding-right: 3rem;
-            transition-duration: .5s;
-        }
-    
-        &:hover &__check {
-            margin-right: -4px;
-            background-color: $green_light;
-            width: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition-duration: .5s;
-            height: 4.5rem;
-            border-radius: 0rem 1rem 1rem 0rem;
-        }
-    
-        &:hover &__icon_check {
-            transform: rotate(0);
-            height: 1.6rem;
-            width: 1.6rem;
-            background-color: $green_light;
-            visibility: visible;
-            align-items: center;
-            justify-content: center;
-            border-radius: 100px;
-            transition-duration: .5s;
-            animation: apparition_check .5s;
-        }
-    
-        &__icon_check {
-            height: 1.6rem;
-            width: 1.6rem;
-            background-color: $green_light;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            border-radius: 100px;
-            transform: rotate(180deg);
-            transition-duration: .5s;
-            visibility: hidden;
-            animation: disparition_check .5s;
-        }
-    
-        &__icon {
-            color: $white;
-            font-size: x-large;
-        }
-    }
-    
-    .explore_button {
-        margin: 0 auto;
-        width: 18%;
-        margin-bottom: 30px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 1rem;
+        position: relative;
     }
 
+    &__price {
+        margin: 0 1rem 0 0;
+        transition-duration: .5s;
+    }
 
+    &__name_description_price {
+        flex: 1;
+        width: 65%;
+    }
+
+    &__check {
+        width: 0;
+        display: flex;
+        background-color: $green_light;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        height: 4.5rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+
+    &:hover &__name {
+        width: inherit;
+        transition: all .5s ease-in-out;
+        transition-duration: .5s;
+    }
+
+    &:hover &__price {
+        padding-right: 3rem;
+        transition-duration: .5s;
+    }
+
+    &:hover &__check {
+        margin-right: -4px;
+        background-color: $green_light;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        height: 4.5rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+
+    &:hover &__icon_check {
+        transform: rotate(0);
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: $green_light;
+        visibility: visible;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transition-duration: .5s;
+        animation: apparition_check .25s;
+    }
+
+    &__icon_check {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: $green_light;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+        visibility: hidden;
+        animation: disparition_check .25s;
+    }
+
+    &__icon {
+        color: $white;
+        font-size: x-large;
+    }
+}
+
+.explore_button {
+    margin: 0 auto;
+    width: 18%;
+}
 
 
 @media (max-width: 1023px) {
