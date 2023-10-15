@@ -3,16 +3,29 @@ footer {
 
     .footer-block {
         display: flex;
-        flex-direction: row;
-        padding: 30px 25px;
-        width: 100%;
-        justify-content: right;
+        flex-direction: column;
+
+        // ! 1024px < width < 1439px ;
+        @media (min-width: 1024px) and (max-width:2400px) {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 30px 25px;
+            width: 100%;
+            justify-content: right;
+        }
 
         .footer-block-link {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            margin: 25px;
+            margin-left: 25px;
+            margin-bottom: 5px;
+
+            // ! 1024px < width < 1439px ;
+            @media (min-width: 1024px) and (max-width:2400px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
 
             .footer-lien {
                 color: $lien_footer;
@@ -35,7 +48,12 @@ footer {
             color: $white;
             font-family: $logo_font;
             font-size: 1.125rem;
-            padding: 25px 50px 25px 120px;
+            padding: 22px 0px 16px 25px;
+
+            // ! 1024px < width < 1439px ;
+            @media (min-width: 1024px) and (max-width:2400px) {
+                padding: 0px 25px 0px 150px;
+            }
         }
     }
 }
