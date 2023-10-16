@@ -641,11 +641,17 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 60px;
+    gap: 5%;
+    margin-right: 18%;
+  }
+  header .header_container .header-logo {
+    font-family: shrikhand, serif;
+    padding: 14px 89px 13px 17px;
+    font-size: 30px;
   }
   header .back {
     font-size: x-large;
@@ -914,11 +920,17 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 60px;
+    gap: 5%;
+    margin-right: 18%;
+  }
+  header .header_container .header-logo {
+    font-family: shrikhand, serif;
+    padding: 14px 89px 13px 17px;
+    font-size: 30px;
   }
   header .back {
     font-size: x-large;
@@ -1140,6 +1152,15 @@ h2 {
   .explore_button {
     margin: 0 auto;
     width: 18%;
+  }
+  header .header_container {
+    margin-right: 42%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .back {
+    margin-right: 300px;
   }
   img {
     max-height: 272px;
@@ -1180,11 +1201,17 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 60px;
+    gap: 5%;
+    margin-right: 18%;
+  }
+  header .header_container .header-logo {
+    font-family: shrikhand, serif;
+    padding: 14px 89px 13px 17px;
+    font-size: 30px;
   }
   header .back {
     font-size: x-large;
@@ -1406,6 +1433,15 @@ h2 {
   .explore_button {
     margin: 0 auto;
     width: 18%;
+  }
+  header .header_container {
+    margin-right: 42%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .back {
+    margin-right: 552px;
   }
   .main_meal_desserts {
     display: -webkit-box;
@@ -1448,6 +1484,6 @@ h2 {
             column-gap: 80px;
   }
   .article {
-    width: 400px;
+    width: 600px;
   }
 }/*# sourceMappingURL=index.css.map */

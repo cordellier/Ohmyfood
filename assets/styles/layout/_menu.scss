@@ -5,17 +5,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     .header_container {
       display: flex;
       align-items: center;
-      width: 100%;
       justify-content: center;
       height: 60px;
+      gap: 5%;
+      margin-right: 18%;
+
+      .header-logo {
+        font-family: $logo_font;
+        padding: 14px 89px 13px 17px;
+        font-size: 30px;
+      }
     }
+
     .back {
       font-size: x-large;
       margin-left: 1rem;
-      color: $black;
+      color: v.$black;
     }
   }
 
@@ -32,11 +41,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .title_restaurant {
       font-family: $logo_font;
       letter-spacing: 0.1rem;
       margin-right: 20px;
     }
+
     .like {
       margin-top: -15px;
     }
@@ -47,20 +58,24 @@
     flex-direction: column;
     margin-top: -100px;
     margin-bottom: 10px;
+
     .title {
       font-family: $primay_font;
       margin-bottom: 5px;
       margin-top: 40px;
     }
+
     .outline {
       border-top: 3px solid v.$green_light;
       width: 40px;
       margin-bottom: 10px;
     }
+
     .articles {
       display: flex;
       flex-direction: column;
       row-gap: 1rem;
+
       h3,
       .article__price {
         font-weight: 600;
@@ -225,6 +240,17 @@
   @media (min-width: 1024px) and (max-width: 2400px) {
     @include base-styles;
 
+    header {
+      .header_container {
+        margin-right: 42%; 
+        justify-content: space-between;
+      }
+      
+      .back {
+        margin-right: 300px;
+      }
+    }
+
     img {
       max-height: 272px;
     }
@@ -247,6 +273,17 @@
 @mixin extra-large-screen-styles {
   @media (min-width: 1440px) {
     @include base-styles;
+
+    header {
+      .header_container {
+        margin-right: 42%; 
+        justify-content: space-between;
+      }
+      
+      .back {
+        margin-right: 552px;
+      }
+    }
 
     .main_meal_desserts {
       display: flex;
@@ -278,7 +315,7 @@
     }
 
     .article {
-      width: 400px;
+      width: 600px;
     }
   }
 }
