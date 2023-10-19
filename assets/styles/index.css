@@ -630,6 +630,104 @@ h2 {
           clip-path: url(#svgPathMenu);
 }
 
+.choice {
+  opacity: 0;
+  -webkit-animation: appearChoice 0.5s forwards;
+          animation: appearChoice 0.5s forwards;
+}
+
+.choice:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.choice:nth-child(2) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.choice:nth-child(3) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.article {
+  opacity: 0;
+  -webkit-animation: appearArticle 0.5s forwards;
+          animation: appearArticle 0.5s forwards;
+}
+
+.choice:nth-child(1) .article:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.choice:nth-child(1) .article:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.choice:nth-child(1) .article:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.choice:nth-child(1) .article:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.choice:nth-child(2) .article:nth-child(1) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.choice:nth-child(2) .article:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.choice:nth-child(2) .article:nth-child(3) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.choice:nth-child(3) .article:nth-child(1) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.choice:nth-child(3) .article:nth-child(2) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.choice:nth-child(3) .article:nth-child(3) {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+@-webkit-keyframes appearChoice {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearChoice {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appearArticle {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appearArticle {
+  to {
+    opacity: 1;
+  }
+}
 @media (max-width: 1023px) {
   header {
     display: -webkit-box;
