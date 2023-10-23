@@ -319,7 +319,7 @@
 }
 
 @mixin large-screen-styles {
-  @media (min-width: 1024px) and (max-width: 2400px) {
+  @media (min-width: 1024px) {
     @include base-styles;
 
     header {

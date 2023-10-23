@@ -1011,7 +1011,7 @@ h2 {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1024px) and (max-width: 2400px) {
+@media (min-width: 1024px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
