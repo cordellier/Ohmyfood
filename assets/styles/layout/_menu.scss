@@ -103,9 +103,9 @@
 
     &__name {
       margin: 5px 0 5px 5px;
-      overflow: hidden; // ! cache le texte dépassant de la largeur
-      white-space: nowrap; // ! empêche le texte de passé à la ligne
-      text-overflow: ellipsis; // ! Ajoute des points de suspension
+      overflow: hidden; 
+      white-space: nowrap; 
+      text-overflow: ellipsis;
       position: relative;
     }
 
